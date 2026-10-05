@@ -1,0 +1,14 @@
+{
+  "name": "Katchau! Jogo do Relâmpago",
+  "short_name": "Katchau!",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#4fb8ff",
+  "theme_color": "#e3161b",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
