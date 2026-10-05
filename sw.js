@@ -1,6 +1,7 @@
 // Permite jogar sem internet depois da primeira visita.
-const CACHE = 'katchau-v1';
-const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-512.png'];
+const CACHE = 'katchau-v2';
+const FILES = ['./', './index.html', './manifest.webmanifest', './icon.svg', './icon-512.png',
+  './js/core.js', './js/audio.js', './js/art.js', './js/world.js', './js/scenes.js', './js/main.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))));
