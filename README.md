@@ -7,13 +7,14 @@ Funciona no navegador do celular, tablet ou computador, sem instalar nada.
 ## Como jogar
 
 **Tela inicial:** toque num carro para escolher (ele buzina e fala o nome).
-Os personagens são McQueen, Mate, Sally, Doc e Luigi. Depois toque num dos 3 jogos:
+Os personagens são McQueen, Mate, Sally, Doc e Luigi. Depois toque num dos 4 jogos:
 
 | Jogo | O que a criança faz |
 |---|---|
 | 🏁 **Corrida** | Segura o dedo na tela para acelerar e arrasta para cima/baixo para pegar estrelas. O Chick Hicks corre junto, mas no final o seu carro sempre ganha 🏆 |
 | 🧽 **Lava-jato** | O carro está cheio de lama. É só esfregar o dedo nele até ficar brilhando ✨ (os olhos do carro seguem o dedo) |
 | 🎨 **Pintura** | Toca numa tinta e o carro muda de cor, e a voz fala o nome da cor. A ⭐ volta para a cor original. A cor escolhida também aparece na corrida e no lava-jato |
+| ⛰️ **Rampão** | Toca na tela e o carro desce uma rampa gigante. Na descida, cada toque rápido dá **turbo** 🔥 (salto maior); no ar, cada toque faz uma **pirueta**. Pega estrelas, estoura balões e sempre aterrissa de pé. No fim mostra quantos **metros** voou e guarda o **recorde** |
 
 O botão 🏠 sempre volta para o início. Na tela inicial: 🔊 liga/desliga todo o som,
 🎵 liga/desliga só a música e ⛶ abre em tela cheia.
@@ -22,10 +23,11 @@ O botão 🏠 sempre volta para o início. Na tela inicial: 🔊 liga/desliga to
 
 | Tela | Teclas |
 |---|---|
-| Início | **← →** escolhem o carro · **ESPAÇO** ou **1** = Corrida · **2** = Lava-jato · **3** = Pintura · **F** = tela cheia |
+| Início | **← →** escolhem o carro · **ESPAÇO** ou **1** = Corrida · **2** = Lava-jato · **3** = Pintura · **4** = Rampão · **F** = tela cheia |
 | Corrida | **segure ESPAÇO** (ou →) para acelerar · **↑ ↓** mudam de faixa · qualquer letra = buzina 📯 |
 | Lava-jato | **segure ESPAÇO** e a esponja esfrega sozinha · ou mova a esponja com as **setas** |
 | Pintura | **← →** escolhem a lata · **ESPAÇO** pinta · números **1–9/0** escolhem direto · qualquer letra = cor surpresa |
+| Rampão | **ESPAÇO**: começa a descer · na descida = turbo · no ar = pirueta |
 | Qualquer tela | **ESC** volta para o início · **ESPAÇO** no final joga de novo |
 
 O mouse também funciona como o dedo (segure o botão para acelerar ou arraste para esfregar).

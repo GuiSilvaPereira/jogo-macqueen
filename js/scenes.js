@@ -19,7 +19,7 @@ function Home() {
       CARS.forEach((c, i) => o.cars.push({ ci: i, len, x: W * (i + 0.5) / 5, y: H * 0.63 }));
       o.horizon = H * 0.36; o.roadTop = H * 0.44; o.roadBot = H * 0.71;
     }
-    o.br = port ? Math.min(W * 0.12, H * 0.07) : Math.min(H * 0.095, W * 0.065);
+    o.br = port ? Math.min(W * 0.095, H * 0.06) : Math.min(H * 0.095, W * 0.06);
     o.by = port ? H * 0.8 : H * 0.83;
     return o;
   }
@@ -37,8 +37,8 @@ function Home() {
     b.push({ x: W - r * 3.4 - 12, y: r + 12, r, e: Snd.musicOn ? '🎵' : '🔕', fn: () => Snd.setMusic(!Snd.musicOn) });
     const de = document.documentElement;
     if (de.requestFullscreen || de.webkitRequestFullscreen) b.push({ x: W - r * 5.8 - 12, y: r + 12, r, e: '⛶', fn: toggleFull });
-    const games = [['🏁', '#ffd21f', 'Corrida', () => go(Race()), '1'], ['🧽', '#5fd0ff', 'Lava-jato', () => go(Wash()), '2'], ['🎨', '#ff7ac0', 'Pintura', () => go(Paint()), '3']];
-    games.forEach((g, i) => b.push({ x: W * (0.2 + i * 0.3), y: o.by, r: o.br, e: g[0], color: g[1], label: g[2], pulse: true, fn: g[3], key: g[4] }));
+    const games = [['🏁', '#ffd21f', 'Corrida', () => go(Race()), '1'], ['🧽', '#5fd0ff', 'Lava-jato', () => go(Wash()), '2'], ['🎨', '#ff7ac0', 'Pintura', () => go(Paint()), '3'], ['⛰️', '#ff9a3c', 'Rampão', () => go(Ramp()), '4']];
+    games.forEach((g, i) => b.push({ x: W * (0.125 + i * 0.25), y: o.by, r: o.br, e: g[0], color: g[1], label: g[2], pulse: true, fn: g[3], key: g[4] }));
     return b;
   };
   S.down = (id, x, y) => {
@@ -51,6 +51,7 @@ function Home() {
     else if (isAct(code) || code === 'Digit1' || code === 'Numpad1') { Snd.pop(); go(Race()); }
     else if (code === 'Digit2' || code === 'Numpad2') { Snd.pop(); go(Wash()); }
     else if (code === 'Digit3' || code === 'Numpad3') { Snd.pop(); go(Paint()); }
+    else if (code === 'Digit4' || code === 'Numpad4') { Snd.pop(); go(Ramp()); }
     else if (code === 'KeyF') toggleFull();
     else if (code === 'KeyH') Snd.honk(curCar().horn);
   };
